@@ -154,15 +154,16 @@ environments with the following commands:
 echo "PermitUserEnvironment yes" >> /etc/ssh/sshd_config
 /etc/init.d/ssh restart
 
-# on some system you might need to replace the above line with
+# on some systems you might need to replace the above line with
 /etc/init.d/sshd restart
 ~~~
 
-## Hadoop Distributed Filesystem (HDFS) Setup
+## Hadoop Distributed File System (HDFS) Setup (Optional)
 
-The Flink system currently uses the Hadoop Distributed Filesystem (HDFS)
+The Flink system currently uses the Hadoop Distributed File System (HDFS)
 to read and write data in a distributed fashion. It is possible to use
-Flink without HDFS or other distributed file systems.
+Flink in distributed mode without HDFS or other distributed file systems, so you 
+may choose to skip this section of the setup.
 
 Make sure to have a running HDFS installation. The following instructions are
 just a general overview of some required settings. Please consult one of the
